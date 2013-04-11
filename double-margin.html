@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Double Margin</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style/site.css">
+<style>
+</style>
+</head>
+<body>
+	
+	<hr>
+	<div class="c">
+		<div style="width:300px;height:200px;border:1px solid #ccc;margin:0 auto;">
+			<div style="width:200px;height:100px;float:left;margin-left:30px;background-color:#ddd;">
+			</div>
+			<div style="width:200px;height:100px;float:right;margin-right:30px;background-color:#ddd;">
+			</div>
+		</div>
+		<div style="width:300px;height:200px;border:1px solid #ccc;margin:10px auto;">
+			<div style="width:200px;height:100px;float:left;margin-left:30px;background-color:#ddd;display:inline;">
+			</div>
+			<div style="width:200px;height:100px;float:right;margin-right:30px;background-color:#ddd;display:inline;">
+			</div>
+		</div>
+	</div>
+	<div class="c">
+		<p>双边距出现的必要条件：IE6+block元素+float+margin</p>
+		<p>解决方法是：为float的元素添加display:inline;</p>
+		<p>解释：首先，inline或者inline-block的元素不存在双边距；然后float属性使得inline元素hasLayout，inline元素表现的就跟inline-block一样，支持宽高等。</p>
+	</div>
+</body>
+</html>
