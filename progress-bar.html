@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Progress Bar</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style/site.css">
+<style>
+progress{
+	border:1px solid #000;
+	background-color:black;
+	color:white;
+}
+progress::-webkit-progress-bar{background-color:black;}
+progress::-webkit-progress-value{background-color:white;}
+progress::-moz-progress-bar{background-color:white;}
+
+</style>
+</head>
+<body>
+	<hr>
+	<div class="c">
+		无value属性：<progress></progress>
+		<br />
+		有value属性，但是没有赋值：<progress value></progress>
+		<br />
+		有value属性，值为0.618（默认范围是0.0~1.0）：<progress value="0.618"></progress>
+		<br />
+		有value属性，值为618（范围是0~1000）：<progress value="618" max="1000"></progress>
+	</div>
+	<hr>
+	<div class="c">
+		<p>新型浏览器都是支持的，但是CSS有些不同的写法：</p>
+		<p>
+			首先，都支持border和background，设定其中之一会使得展现成扁平样式的；<br><br>
+			Chrome26设置已完成进度背景色::-webkit-progress-value，设置整个进度条背景色（该颜色会遮挡background）::-webkit-progress-bar<br><br>
+			Firefox18设置已完成进度条背景色::-moz-progress-bar（与chrome相反- -）<br><br>
+			IE10设置已完成进度条背景色color（我觉得这个才是正道，毕竟进度条控件的内容就是里面的进度条）<br><br>
+			Opera12无法设置进度条背景色。。<br>
+		</p>
+	</div>
+</body>
+</html>
