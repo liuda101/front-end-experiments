@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Query Chrome Scrollbar Bug</title>
+<meta charset="utf-8">
+<style>
+@media (min-width:800px){
+body{color:black;}
+}
+@media (max-width:799px){
+body{color:red;}
+}
+
+div{height:400px;}
+</style>
+</head>
+<body>
+	<div>
+		重现该bug的步骤：
+		<ol>
+			<li>
+				打开本页面
+			</li>
+			<li>
+				将浏览器高度最大化，宽度调到800px宽
+			</li>
+			<li>
+				拖动浏览器，使其宽度不变，高度变小，直至出现滚动条
+			</li>
+			<li>
+				你会发现，页面上的文字从黑色变为红色了！
+			</li>
+		</ol>
+		<p>
+			出现这个bug的原因是：<br>
+			Chrome在计算media query中的width信息的时候，不会将滚动条的宽度计算在内。所以，一开始是匹配了min-width:800px，但当
+			出现滚动条的时候，由于内容宽度变小，导致其匹配了max-width:799px
+		</p>
+	</div>
+</body>
+</html>

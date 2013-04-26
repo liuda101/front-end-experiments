@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Query</title>
+<meta charset="utf-8">
+<link rel="stylesheet" media="print" href="style/site.css"></link>
+<style>
+@media (min-width:1000px){
+}
+</style>
+</head>
+<body>
+	<header>
+		<h1>
+			Media Query
+		</h1>
+	</header>
+	<div id="content">
+		<p>
+			Media Query on a link element.
+		</p>
+		<pre>&lt;link rel="stylesheet" media="print" href="some/path/to/css.css" /&gt;</pre>
+		<hr>
+
+		<p>
+			Media Query within a style sheet.
+		</p>
+		<pre>@media(print){/* some css rules */}</pre>
+		<hr>
+
+		<p>
+			Media types:
+			<dl>
+				<dt>all</dt>
+				<dd>所有设备</dd>
+
+				<dt>braille</dt>
+				<dd>盲文设备</dd>
+
+				<dt>embossed</dt>
+				<dd></dd>
+
+				<dt>handheld</dt>
+				<dd>手持设备</dd>
+
+				<dt>print</dt>
+				<dd>打印设备，或者处于打印浏览模式的设备</dd>
+
+				<dt>projection</dt>
+				<dd>投影设备</dd>
+
+				<dt>screen</dt>
+				<dd>电脑屏幕</dd>
+
+				<dt>speech</dt>
+				<dd>语言合成设备</dd>
+
+				<dt>tty</dt>
+				<dd></dd>
+
+				<dt>tv</dt>
+				<dd>电视</dd>
+			</dl>
+		</p>
+		<hr>
+		<p>
+			Logical operators : not, and, only
+			<pre>@media screen (min-width:700px) and (orientation: landscape){ }</pre>
+			<pre>@media (min-width :700px), handheld and (orientation: landscape){ }</pre>
+		</p>
+		<hr>
+		<p>
+			Media features:
+			color
+			color-index
+			aspect-ratio
+			device-aspect-ratio
+			device-height
+			device-width
+			grid
+			height
+			monochrome
+			orientation
+			resolution
+			scan
+			width
+		</p>
+
+	</div>
+	<footer>
+	</footer>
+</body>
+</html>
