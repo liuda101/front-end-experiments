@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flexbox</title>
+<meta charset="utf-8">
+<link rel="stylesheet" media="print" href="style/site.css"></link>
+<style>
+.flex-container{width:500px;margin-bottom:20px;background-color:#efefef;display:-webkit-flex;}
+.flex-item{width:100px;margin:5px;height:50px;background-color:#cdcdcd;}
+
+.flex-container1{display:flex;direction:rtl;}
+.flex-container2{-webkit-flex-direction:row-reverse;}
+.flex-container3{-webkit-flex-direction:column;}
+.flex-container4{-webkit-flex-direction:column-reverse;}
+</style>
+</head>
+<body>
+	<header>
+		<h1>
+			Flexbox
+		</h1>
+	</header>
+	<div id="content">
+
+		Default
+		<div class="flex-container">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+		</div>
+
+		direction:rtl;
+		<div class="flex-container flex-container1">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+		</div>
+
+		flex-direction:row-reverse;
+		<div class="flex-container flex-container2">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+		</div>
+
+		flex-direction:column;
+		<div class="flex-container flex-container3">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+		</div>
+
+		flex-direction:column-reverse;
+		<div class="flex-container flex-container4">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+		</div>
+
+		justify-content:flex-end;
+		<div class="flex-container" style="-webkit-justify-content:flex-end;">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+		</div>
+
+		justify-content:center;
+		<div class="flex-container" style="-webkit-justify-content:center;">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+		</div>
+
+		justify-content:space-between;
+		<div class="flex-container" style="-webkit-justify-content:space-between;">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+		</div>
+
+		justify-content:space-around;
+		<div class="flex-container" style="-webkit-justify-content:space-around;">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+		</div>
+
+		align-items:flex-end;
+		<div class="flex-container" style="-webkit-align-items:flex-end;height:100px;">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+		</div>
+
+		align-items:center;
+		<div class="flex-container" style="-webkit-align-items:center;height:100px;">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+		</div>
+
+		align-items:baseline;
+		<div class="flex-container" style="-webkit-align-items:baseline;height:100px;">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+		</div>
+
+		align-items:stretch;
+		<div class="flex-container" style="-webkit-align-items:stretch;height:100px;">
+			<div class="flex-item" style="height:auto;">
+				Flex Item 1
+			</div>
+			<div class="flex-item" style="height:auto;">
+				Flex Item 2
+			</div>
+		</div>
+
+		flex-wrap:wrap;
+		<div class="flex-container" style="-webkit-flex-wrap:wrap;">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+			<div class="flex-item">
+				Flex Item 3
+			</div>
+			<div class="flex-item">
+				Flex Item 4
+			</div>
+			<div class="flex-item">
+				Flex Item 5
+			</div>
+		</div>
+
+		flex-wrap:wrap-reverse;
+		<div class="flex-container" style="-webkit-flex-wrap:wrap-reverse;">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+			<div class="flex-item">
+				Flex Item 3
+			</div>
+			<div class="flex-item">
+				Flex Item 4
+			</div>
+			<div class="flex-item">
+				Flex Item 5
+			</div>
+		</div>
+
+		align-content:center;
+		<div class="flex-container" style="-webkit-flex-wrap:wrap;-webkit-align-content:center;height:200px;">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+			<div class="flex-item">
+				Flex Item 3
+			</div>
+			<div class="flex-item">
+				Flex Item 4
+			</div>
+			<div class="flex-item">
+				Flex Item 5
+			</div>
+		</div>
+
+		align-content:flex-end;
+		<div class="flex-container" style="-webkit-flex-wrap:wrap;-webkit-align-content:flex-end;height:200px;">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+			<div class="flex-item">
+				Flex Item 3
+			</div>
+			<div class="flex-item">
+				Flex Item 4
+			</div>
+			<div class="flex-item">
+				Flex Item 5
+			</div>
+		</div>
+
+		align-content:space-between;
+		<div class="flex-container" style="-webkit-flex-wrap:wrap;-webkit-align-content:space-between;height:200px;">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+			<div class="flex-item">
+				Flex Item 3
+			</div>
+			<div class="flex-item">
+				Flex Item 4
+			</div>
+			<div class="flex-item">
+				Flex Item 5
+			</div>
+		</div>
+
+		align-content:space-around;
+		<div class="flex-container" style="-webkit-flex-wrap:wrap;-webkit-align-content:space-around;height:200px;">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+			<div class="flex-item">
+				Flex Item 3
+			</div>
+			<div class="flex-item">
+				Flex Item 4
+			</div>
+			<div class="flex-item">
+				Flex Item 5
+			</div>
+		</div>
+
+		align-items:center;
+		<div class="flex-container" style="-webkit-flex-wrap:wrap;-webkit-align-items:center;height:200px;">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+			<div class="flex-item">
+				Flex Item 3
+			</div>
+			<div class="flex-item">
+				Flex Item 4
+			</div>
+			<div class="flex-item">
+				Flex Item 5
+			</div>
+		</div>
+
+		flex-flow:[flex-direction] [flex-wrap];
+		<div class="flex-container" style="-webkit-flex-flow:column wrap;height:200px;">
+			<div class="flex-item">
+				Flex Item 1
+			</div>
+			<div class="flex-item">
+				Flex Item 2
+			</div>
+			<div class="flex-item">
+				Flex Item 3
+			</div>
+			<div class="flex-item">
+				Flex Item 4
+			</div>
+			<div class="flex-item">
+				Flex Item 5
+			</div>
+		</div>
+	</div>
+	<footer>
+		<a href="http://weblog.bocoup.com/dive-into-flexbox/?utm_source=CSS-Weekly&utm_campaign=Issue-38&utm_medium=web" target="_blank">来源</a>
+	</footer>
+</body>
+</html>
