@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contains</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style/site.css">
+</head>
+<body>
+	<header>
+		<h1>
+			Contains
+		</h1>
+	</header>
+	<div id="content">
+		<div id="result">
+		</div>
+		<div id="father">
+			<div id="child">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var r = document.getElementById('result');
+	function log(str){
+		r.innerHTML = r.innerHTML + '<br>' + str;
+	}
+
+
+	var f = document.getElementById('father');
+	var c = document.getElementById('child');
+	log(f.contains(c));
+	log(c.contains(f));
+	log(f.contains(f));
+	</script>
+</body>
+</html>

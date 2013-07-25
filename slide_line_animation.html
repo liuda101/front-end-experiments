@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide line animation</title>
+	<style>
+	body{background-color:#000;}
+	div{width:400px;position:relative;}
+	a{color:#fff;text-decoration:none;}
+	a:hover{text-decoration:none;}
+	a>span{position:absolute;bottom:0px;width:100%;left:0px;height:1px;
+		background:-webkit-linear-gradient(left, #ffffff,#ffffff 5%,rgba(255,255,255,0.25) 5%,rgba(255,255,255,0));
+		background-size:200% 100%;
+		background-position:100% 0;
+	}
+	a:hover>span{-webkit-transition:background 0.6s;background-position:-100% 0;}
+	</style>
+</head>
+<body>
+
+<div>
+	<a href="#">Twitter: real_css_tricks<span></span></a>
+</div>
+
+</div>
+</body>
+</html>
