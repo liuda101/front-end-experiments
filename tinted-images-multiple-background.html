@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Progress Bar</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style/site.css">
+<style>
+.image{width:500px; height:200px; margin: 0 auto 20px auto; border:1px solid #cdcdcd;}
+#image1{
+	background:rgba(255,0,0,0.5), url(http://1-ps.googleusercontent.com/x/s.html5rocks-hrd.appspot.com/www.html5rocks.com/en/tutorials/speed/txt-compression/xbanner.jpg.pagespeed.ic.KpEotQ71_j.webp);
+}
+#image2{
+	background:
+		linear-gradient(
+			rgba(255, 0, 0, 0.45),
+			rgba(255, 0, 0, 0.45)
+		),
+		url(http://1-ps.googleusercontent.com/x/s.html5rocks-hrd.appspot.com/www.html5rocks.com/en/tutorials/speed/txt-compression/xbanner.jpg.pagespeed.ic.KpEotQ71_j.webp);
+}
+</style>
+</head>
+<body>
+	<hr>
+	<div class="c">
+		<div id="image1" class="image">
+		</div>
+		<div id="image2" class="image">
+		</div>
+	</div>
+	<hr>
+	<div class="c">
+		<p>目的：想使用多背景图的方式来为背景图添加一层颜色透明遮罩</p>
+		<p>如果直接使用 backgorund:rgba(0,0,0,0.2), url(url); 的话，是无作用的，因为跟background-color冲突</p>
+		<p>可以用linear-gradient来制造颜色遮罩</p>
+	</div>
+</body>
+</html>
